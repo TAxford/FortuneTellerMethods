@@ -47,6 +47,8 @@ namespace FortuneTellerMethod
             {
                 value = (age * 2);
             }
+
+            Retirement(age);
             Console.WriteLine("");
 
             ////user enters 2 digit birth month
@@ -206,6 +208,17 @@ namespace FortuneTellerMethod
             Console.WriteLine("Greetings " + firstName + " " + lastName + " I will tell you your fortune.");
         }
         
+        static void Retirement(int age)
+        {
+            if (age % 2 == 0)
+            {
+               age = (age * 3);
+            }
+            else
+            {
+                age = (age * 2);
+            }
+        }
 
 
 
